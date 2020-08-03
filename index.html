@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card text-center">
+                    <div class="card-header text-left">
+                        <h3>Payment form example</h3>
+                    </div>
+
+                    <div class="card-body">
+                        <div class="alert alert-danger alert-dismissible fade show text-left" role="alert">
+                            Some fields are missing
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <form>
+                            <div class="form-row">
+                                ​
+                                <div class="form-group col-md-5 text-left">
+                                    <label for="card">Card#</label>
+                                    <input type="text" class="form-control" id="card" placeholder="XXXXXXXXXXXXXXXXX">
+                                </div>
+                                <div class="form-group col-md-3 text-left">
+                                    <label for="cvc">CVC #</label>
+                                    <input type="text" class="form-control" id="cvc" placeholder="000">
+                                </div>
+                                <div class="form-group col-md-4 text-left">
+                                    <label for="amount">Amount</label>
+                                    <input type="text" class="form-control" id="amount" placeholder="Amount">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6 text-left">
+                                    <label for="firstname">First Name</label>
+                                    <input type="text" class="form-control" id="firstname">
+                                </div>
+                                <div class="form-group col-md-6 text-left">
+                                    <label for="lastname">Last Name</label>
+                                    <input type="text" class="form-control" id="lastname">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6 text-left">
+                                    <label for="city">City</label>
+                                    <input type="text" class="form-control" id="city">
+                                </div>
+                                <div class="form-group col-md-3 text-left">
+                                    <label for="state">State</label>
+                                    <select class="custom-select mr-sm-2" name="state" id="state">
+                                        <option selected>Pick a state</option>
+                                        <option value="santiago">Santiago</option>
+                                        <option value="talca">Talca</option>
+                                        <option value="puntaarenas">Punta Arenas</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-3 text-left">
+                                    <label for="postalcode">postalcode</label>
+                                    <input type="text" class="form-control" id="postalcode">
+                                </div>
+                            </div>
+                            <div class="form-row">
+
+                                <div class="form-group col-3">
+                                    <div class="text-left">
+                                        <label>We accept:</label>
+                                    </div>
+                                    <div class="text-left bg-secondary rounded pl-2 py-2">
+                                        <div class=" col-md-1 custom-radio custom-control-inline pl-4">
+                                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline1"><i class="fab fa-cc-mastercard fa-1x"></i></label>
+                                        </div>
+                                        <div class=" col-md-1 custom-radio custom-control-inline pl-4">
+                                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline1"><i class="fab fa-cc-visa"></i></label>
+                                        </div>
+                                        <div class=" col-md-1 custom-radio custom-control-inline pl-4">
+                                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline1"><i class="fab fa-cc-diners-club"></i></label>
+                                        </div>
+                                        <div class=" col-md-1 custom-radio custom-control-inline pl-4">
+                                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadioInline1"><i class="fab fa-cc-amex"></i></i></i></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-3">
+
+                                </div>
+                                <div class="form-group col-md-6 text-left">
+                                    <label for="comment">Message:</label>
+                                    <textarea class="form-control" rows="4" id="comment"></textarea>
+
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="card-footer text-muted text-right">
+                        <button type="button" class="btn btn-secondary">Cancel</button>
+                        <button type="button" class="btn btn-primary">Send</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
